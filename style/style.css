@@ -8,12 +8,6 @@
     sans-serif;
   font-size: 14px;
 }
-button {
-  background-color: transparent;
-  border: 1px solid rgb(167, 167, 167);
-  padding: 0.2rem 0.6rem;
-  border-radius: 5px;
-}
 button * {
   color: white;
   transition: all 0.15s ease-in-out;
@@ -21,7 +15,16 @@ button * {
 button:hover * {
   color: var(--main-blue);
 }
-
+.btn-primary {
+  background-color: var(--main-green);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #18a78a;
+}
+.nav-link {
+  color: white;
+}
 .line {
   background-color: var(--main-blue);
   height: 4px;
@@ -68,7 +71,6 @@ header {
   /* font-weight: 600; */
 }
 /* ----------- / JUMBOTRON -----------  */
-
 /* ------------ PORTFOLIO ------------- */
 .portfolio {
   text-align: center;
@@ -78,10 +80,6 @@ header {
 }
 .portfolio__card {
   overflow: hidden;
-}
-.portfolio__img {
-  width: 100%;
-  border-radius: 10px;
 }
 /* ------------ / PORTFOLIO ------------- */
 /* ------------ ABOUT ------------- */
@@ -93,6 +91,22 @@ header {
   color: white;
 }
 /* ------------ / ABOUT ------------- */
+/* ------------ CONTACT ------------- */
+.contact-me * {
+  color: var(--main-blue);
+}
+/* ------------ / CONTACT ------------- */
+/* ------------ FOOTER ------------- */
+footer {
+  background-color: var(--main-blue);
+}
+footer * {
+  color: white;
+}
+.sub-footer {
+  background-color: #1e2c3a;
+}
+/* ------------ / FOOTER ------------- */
 /* --------------- Media Queries --------------- */
 
 /* medium */

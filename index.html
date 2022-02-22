@@ -25,12 +25,25 @@
     <header>
         <div class="container px-2 py-4">
             <div class="row">
-                <div class="col-9 d-flex align-items-center header__logo-wrapper ">
+                <div class="col-6  d-flex align-items-center header__logo-wrapper ">
                     <h5 class="m-0">Start Bootstrap</h5>
                 </div>
-                <div class="col d-flex align-items-center header__menu-btn-wrapper">
+                <div class="col d-flex align-items-center d-md-none header__menu-btn-wrapper">
                     <button class="btn btn-outline-light"><i class="fa-solid fa-bars"></i></button>
                 </div>
+                <nav class="col d-none d-md-block">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -46,7 +59,7 @@
             <h4 class="jumbotron__subtitle text-uppercase fw-normal m-4">Graphic Artist - Web Designer - Illustrator
             </h4>
         </section>
-        <section class="portfolio p-5">
+        <section class="portfolio p-5" id="portfolio">
             <h2 class="text-uppercase fw-bold">Portfolio</h2>
             <div class="row align-items-center justify-content-center mx-auto mb-2">
                 <div class="col-auto w-25 line rounded"></div>
@@ -56,27 +69,27 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                     <div class=" col portfolio__card">
-                        <img src="./img/cabin.png" class="portfolio__img" alt="">
+                        <img src="./img/cabin.png" class="w-100 rounded-3" alt="">
                     </div>
                     <div class=" col portfolio__card">
-                        <img src="./img/cake.png" class="portfolio__img" alt="">
+                        <img src="./img/cake.png" class="w-100 rounded-3" alt="">
                     </div>
                     <div class=" col portfolio__card">
-                        <img src="./img/circus.png" class="portfolio__img" alt="">
+                        <img src="./img/circus.png" class="w-100 rounded-3" alt="">
                     </div>
                     <div class=" col portfolio__card">
-                        <img src="./img/game.png" class="portfolio__img" alt="">
+                        <img src="./img/game.png" class="w-100 rounded-3" alt="">
                     </div>
                     <div class=" col portfolio__card">
-                        <img src="./img/safe.png" class="portfolio__img" alt="">
+                        <img src="./img/safe.png" class="w-100 rounded-3" alt="">
                     </div>
                     <div class=" col portfolio__card">
-                        <img src="./img/submarine.png" class="portfolio__img" alt="">
+                        <img src="./img/submarine.png" class="w-100 rounded-3" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about px-2 py-5">
+        <section class="about px-2 py-5" id="about">
             <h2 class="text-uppercase fw-bold">About</h2>
             <div class="row align-items-center justify-content-center mx-auto mb-2">
                 <div class="col-auto w-25 line line--white rounded"></div>
@@ -113,15 +126,66 @@
                 </div>
             </div>
         </section>
-        <section class="contact_me" id="contact_me">
-            <h2>Contact me</h2>
+        <section class="contact_me text-center p-4" id="contact">
+            <h2 class="text-uppercase">Contact me</h2>
             <div class="row align-items-center justify-content-center mx-auto mb-2">
                 <div class="col-auto w-25 line rounded"></div>
                 <i class="fa-solid fa-star col-auto"></i>
                 <div class="col-auto w-25 line rounded"></div>
             </div>
-
+            <div class="container">
+                <div class="row">
+                    <form class="text-start">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Andrea">
+                            <label for="floatingName" class="form-label">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="form-mail" placeholder="andrea@mail.com">
+                            <label for="form-mail" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="form-phone" placeholder="+39 123 345 7890">
+                            <label for="form-phone" class="form-label">Phone Number</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Lascia un messaggio" id="floatingTextarea"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                            </div">
+                            <button type="submit" class="btn btn-primary my-3">Send</button>
+                    </form>
+                </div>
+            </div>
         </section>
+        <footer class="text-center">
+            <div class="container p-4">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col">
+                        <h5 class="text-uppercase">LOCATION</h5>
+                        <p>2215 Luogo a Caso, GD 12345</p>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-uppercase">Around the web</h5>
+                        <p>qualche logo qui ci starebbe proprio bene</p>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-uppercase">about freelancer</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque inventore in repudiandae
+                            blanditiis, repellat enim?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
