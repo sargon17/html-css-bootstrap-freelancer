@@ -1,11 +1,12 @@
 :root {
   --main-blue: #2c3e50;
+  --main-green: #1abc9c;
 }
 
 * {
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 button {
   background-color: transparent;
@@ -15,7 +16,22 @@ button {
 }
 button * {
   color: white;
-  font-size: 1.5rem;
+  transition: all 0.15s ease-in-out;
+}
+button:hover * {
+  color: var(--main-blue);
+}
+
+.line {
+  background-color: var(--main-blue);
+  height: 4px;
+}
+.line--white {
+  background-color: white;
+}
+.fa-star {
+  color: var(--main-blue);
+  font-size: 32px;
 }
 
 /* ----------- HEADER -----------  */
@@ -32,7 +48,57 @@ header {
   justify-content: flex-end;
 }
 /* ----------- / HEADER -----------  */
+/* ----------- JUMBOTRON -----------  */
+.jumbotron {
+  background-color: var(--main-green);
+  text-align: center;
+}
+.jumbotron * {
+  color: white;
+}
+.jumbotron__image {
+  width: 60%;
+  max-width: 350px;
+}
+.jumbotron__title {
+  font-size: 2rem;
+}
+.jumbotron__subtitle {
+  font-size: 0.9rem;
+  /* font-weight: 600; */
+}
+/* ----------- / JUMBOTRON -----------  */
 
+/* ------------ PORTFOLIO ------------- */
+.portfolio {
+  text-align: center;
+}
+.portfolio * {
+  color: var(--main-blue);
+}
+.portfolio__card {
+  overflow: hidden;
+}
+.portfolio__img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* ------------ / PORTFOLIO ------------- */
+/* ------------ ABOUT ------------- */
+.about {
+  background-color: var(--main-green);
+}
+.about * {
+  text-align: center;
+  color: white;
+}
+/* ------------ / ABOUT ------------- */
 /* --------------- Media Queries --------------- */
 
+/* medium */
+@media only screen and (min-width: 768px) {
+  .jumbotron__subtitle {
+    font-size: 1.4rem;
+  }
+}
 /* --------------- / Media Queries --------------- */
